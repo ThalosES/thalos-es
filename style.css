@@ -22,7 +22,7 @@ a {
 img {
 	height: 100%;
 	width: 100%;
-	object-fit: cover;
+	object-fit: contain;
 }
 p {
 	color: black;
@@ -42,7 +42,7 @@ p {
 	text-align: center;
 }
 .section-title span {
-	color: crimson;
+	color: rgb(0, 140, 255);
 }
 
 .cta {
@@ -50,7 +50,7 @@ p {
 	padding: 10px 30px;
 	color: white;
 	background-color: transparent;
-	border: 2px solid crimson;
+	border: 2px solid cyan;
 	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
@@ -60,7 +60,7 @@ p {
 }
 .cta:hover {
 	color: white;
-	background-color: crimson;
+	background-color: cyan;
 }
 .brand h1 {
 	font-size: 3rem;
@@ -68,7 +68,7 @@ p {
 	color: white;
 }
 .brand h1 span {
-	color: crimson;
+	color: cyan;
 }
 
 /* Header section */
@@ -140,7 +140,7 @@ p {
 	letter-spacing: initial;
 }
 #header .nav-list ul li:hover a {
-	color: crimson;
+	color: cyan;
 }
 #header .hamburger {
 	height: 60px;
@@ -219,9 +219,11 @@ p {
 }
 
 #hero .hero-img {
-	animation-name: glitch;
-	animation-duration: 1.4s;
-	animation-iteration-count: infinite;
+	width: 70%;
+	margin-left: 100px;
+	margin-top: 60px;
+	rotate: 18deg;
+	animation: floating 2.5s ease-in-out infinite
   }
 
 #hero .hero {
@@ -465,7 +467,7 @@ p {
     top: 19px;
     height: 98%;
     width: 98%;
-    border: 7px solid crimson;
+    border: 7px solid cyan;
     z-index: -1;
 }
 
@@ -569,7 +571,7 @@ p {
 	}
 }
 
-@keyframes glitch{
+/* @keyframes glitch{
 	2%,64%{
 	  transform: translate(2px,0) skew(0deg);
 	}
@@ -616,8 +618,29 @@ p {
 	62%{
 	  transform: translate(-22px,5px) skew(21deg); 
 	}
+} */
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 20px); }
+    100%   { transform: translate(0, -0px); }    
 }
 
+.animation {
+    animation: line 5s forwards, fill 1s forwards 2s;
+}
+
+@keyframes line {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill {
+    to {
+        fill-opacity: 1;
+    }
+}
 
 @keyframes text_reveal_box {
 	50% {
@@ -636,7 +659,7 @@ p {
 }
 @keyframes text_reveal_name {
 	100% {
-		color: crimson;
+		color: cyan;
 		font-weight: 500;
 	}
 }
@@ -701,7 +724,7 @@ p {
 		top: 34px;
 		height: 98%;
 		width: 98%;
-		border: 10px solid crimson;
+		border: 10px solid cyan;
 	}
 	#about .col-right {
 		text-align: left;
