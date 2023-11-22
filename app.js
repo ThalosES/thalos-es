@@ -28,17 +28,6 @@ menu_item.forEach((item) => {
   });
 });
 
-const heroImg = document.querySelector(".hero .hero-img");
-
-heroImg.classList.add("hero .hero-img"); // Start the animation on page load
-
-heroImg.addEventListener("mouseenter", () => {
-  heroImg.classList.remove("hero .hero-img"); // Stop the animation on hover
-});
-
-heroImg.addEventListener("mouseleave", () => {
-  heroImg.classList.add("hero .hero-img"); // Restart the animation on mouse leave
-});
 
 const buttonElement = document.querySelector("project-img");
 
