@@ -39,3 +39,9 @@ heroImg.addEventListener("mouseenter", () => {
 heroImg.addEventListener("mouseleave", () => {
   heroImg.classList.add("hero .hero-img"); // Restart the animation on mouse leave
 });
+
+const buttonElement = document.querySelector("project-img");
+
+buttonElement.addEventListener("click", () => {
+  window.location.href = "https://t.me/horus_vbot";
+});
