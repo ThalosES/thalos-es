@@ -10,16 +10,19 @@ import {
   serverTimestamp,
   collection,
 } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-firestore.js";
+
+// import * as dotenv from "./node_modules/dotenv/config";
+// dotenv.config({ path: __dirname+'/.env' });
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBU8j7sOzwdOgXqrlQVjbgfpbbTIcuKd3k",
-  authDomain: "thalos-ada72.firebaseapp.com",
-  projectId: "thalos-ada72",
-  storageBucket: "thalos-ada72.appspot.com",
-  messagingSenderId: "334285141266",
-  appId: "1:334285141266:web:2214bab5eacee27a8c6fcb",
-  measurementId: "G-KQVEDNEJK8",
+  apiKey: process.env.API_KEY,
+  authDomain: process.env.AUTH_DOMAIN,
+  projectId: process.env.PROJECT_ID,
+  storageBucket: process.env.STORAGE_BUCKET,
+  messagingSenderId: process.env.MESSAGING_SENDER_ID,
+  appId: process.env.APP_ID,
+  measurementId: process.env.MEASUREMENT_ID,
 };
 
 // Initialize Firebase
