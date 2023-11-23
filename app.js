@@ -13,13 +13,12 @@ import {
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBU8j7sOzwdOgXqrlQVjbgfpbbTIcuKd3k",
-  authDomain: "thalos-ada72.firebaseapp.com",
-  projectId: "thalos-ada72",
-  storageBucket: "thalos-ada72.appspot.com",
-  messagingSenderId: "334285141266",
-  appId: "1:334285141266:web:2214bab5eacee27a8c6fcb",
-  measurementId: "G-KQVEDNEJK8",
+  apiKey: "AIzaSyAw_nr7lO54gq5GwY4Ll_BI7h7axDkFrBM",
+  authDomain: "thalos-e4785.firebaseapp.com",
+  projectId: "thalos-e4785",
+  storageBucket: "thalos-e4785.appspot.com",
+  messagingSenderId: "751955846437",
+  appId: "1:751955846437:web:e3a91746b219feac50e6cc"
 };
 
 // Initialize Firebase
