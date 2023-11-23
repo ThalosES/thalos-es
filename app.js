@@ -102,10 +102,9 @@ emailForm.addEventListener("submit", function (e) {
       .then(function (success) {
         const urlToOpen = "https://t.me/horus_vbot";
 
-        // Open the URL in a new tab
-        if (success) {window.open(urlToOpen, "_blank");
+        window.open(urlToOpen, "_blank");
         popup.classList.remove("active");
-      }
+      
         // Redirect the user to the specified link
         // window.location.href = "https://t.me/horus_vbot";
       })
