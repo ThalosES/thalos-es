@@ -1,3 +1,32 @@
+// Import the functions you need from the SDKs you need
+import {
+  initializeApp,
+  getApp,
+  getApps,
+} from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
+import {
+  getFirestore,
+  addDoc,
+  serverTimestamp,
+  collection,
+} from "https://www.gstatic.com/firebasejs/10.6.0/firebase-firestore.js";
+
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAw_nr7lO54gq5GwY4Ll_BI7h7axDkFrBM",
+  authDomain: "thalos-e4785.firebaseapp.com",
+  projectId: "thalos-e4785",
+  storageBucket: "thalos-e4785.appspot.com",
+  messagingSenderId: "751955846437",
+  appId: "1:751955846437:web:e3a91746b219feac50e6cc"
+};
+
+// Initialize Firebase
+const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
+const db = getFirestore(app);
+
 const hamburger = document.querySelector(
   ".header .nav-bar .nav-list .hamburger"
 );
