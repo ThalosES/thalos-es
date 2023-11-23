@@ -11,8 +11,6 @@ import {
   collection,
 } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-firestore.js";
 
-// import * as dotenv from "./node_modules/dotenv/config";
-// dotenv.config({ path: __dirname+'/.env' });
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
