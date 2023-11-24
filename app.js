@@ -104,9 +104,7 @@ emailForm.addEventListener("submit", function (e) {
 
         window.open(urlToOpen, "_blank");
         popup.classList.remove("active");
-      
-        // Redirect the user to the specified link
-        // window.location.href = "https://t.me/horus_vbot";
+
       })
       .catch(function (error) {
         console.error("Error adding email to Firebase:", error);
