@@ -11,7 +11,6 @@ import {
   collection,
 } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-firestore.js";
 
-
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
@@ -20,7 +19,7 @@ const firebaseConfig = {
   projectId: "thalos-e4785",
   storageBucket: "thalos-e4785.appspot.com",
   messagingSenderId: "751955846437",
-  appId: "1:751955846437:web:e3a91746b219feac50e6cc"
+  appId: "1:751955846437:web:e3a91746b219feac50e6cc",
 };
 
 // Initialize Firebase
@@ -100,11 +99,13 @@ emailForm.addEventListener("submit", function (e) {
     // If the email is valid, store it in Firebase
     addEmailToFirestore(userEmail)
       .then(function (success) {
-        const urlToOpen = "https://t.me/horus_vbot";
+        const urlToOpen = "https://t.me/horus_vinted_bot";
 
         window.open(urlToOpen, "_blank");
         popup.classList.remove("active");
 
+        // Redirect the user to the specified link
+        // window.location.href = "https://t.me/horus_vbot";
       })
       .catch(function (error) {
         console.error("Error adding email to Firebase:", error);
